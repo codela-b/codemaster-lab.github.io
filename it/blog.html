@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!------ If you want white buttons in this page add in the html block the following -------->
+<!------ class in the html block : <html class="white-buttons"> -------->
+<html lang="it" class="white-buttons">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Blog - codemaster</title>
+        <link rel="stylesheet" href="/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/4e8c8c19ec.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="resources/logo-white.png"></a>
+                <div class="nav-links-white" id="navLinksWhite">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tutorials.html">Tutorial</a></li>
+                        <li><a href="about.html">Chi siamo</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Il nostro Blog</h1>
+        </section>
+        
+        <!------- blog page content------>
+        
+        <section class="blog-content">
+        
+            <div class="row">
+                <div class="blog-left">
+                    <img src="resources/pc-build-ryzen-amd.png">
+                    
+                    <div class="comment-box">
+                    
+                        <h3>Lascia un commento</h3>
+                        
+                        <form class="comment-form">
+                        
+                            <input type="text" placeholder="Enter Name" required>
+                            <input type="text" placeholder="Enter Email" required>
+                            <textarea rows="5" placeholder="Your comment" required>
+                            </textarea>
+                            <button type="submit" class="hero-btn green-btn">POST COMMENT</button>
+                        
+                        </form>
+                    
+                    </div>
+                </div>
+                <div class="blog-right"></div>
+            </div>
+        
+        </section>
+
+        <!----- Footer ----->
+        
+        <section class="footer">
+            <h4>Chi siamo</h4>
+            <p>Sono codemaster, una persona che vive in Sicilia, Italia</p>
+            <div class="icons">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <p>Fatto con <i class="fa-solid fa-heart"></i> da codemaster</p>
+            <p>2022 codemaster-lab</p>
+            <div class="dropdown">
+                <button class="dropbtn">Lingua</button>
+                <div class="dropdown-content">
+                    <a href="/about.html"><img src="resources/flag_us.png">English (US)</a>
+                    <a href="/en-gb/about.html"><img src="resources/flag_uk.png">English (UK)</a>
+                </div>
+            </div>
+        </section>
+        
+
+
+        <!--------JavaScript for Toggle Menu -------------------->
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+        <script>
+
+            var navLinks = document.getElementById("navLinksWhite");
+
+            function showMenu(){
+                navLinksWhite.style.right = "0";
+            }
+            function hideMenu(){
+                navLinksWhite.style.right = "-200px";
+            }
+
+        </script>
+    </body>
+</html>
