@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!------ If you want white buttons in this page add in the html block the following -------->
+<!------ class in the html block : <html class="white-buttons"> -------->
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home - codemaster</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/4e8c8c19ec.js" crossorigin="anonymous"></script>
+         <script src="https://www.google.com/recaptcha/api.js"></script>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="resources/logo000.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tutorials.html">Tutorials</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>codemaster's blog !!!WORK IN PROGRESS!!!</h1>
+                <p>Here you can find many tutorials of how <br> to assemble a computer... and more!</p>
+                <a href="tutorials.html" class="hero-btn">Go to the tutorials</a>
+            </div>
+
+        </section>
+
+        <!-------- Tutorials -------->
+
+        <section class="tutorials">
+            <h1>Tutorials</h1>
+            <p>Tutorials we offer</p>
+            
+            <div class="row">
+                <div class="tutorials-col">
+                    <h3>Building A PC</h3>
+                    <p>Building a PC is easier than you think!</p>
+                </div>
+            </div>
+            
+        </section>
+        
+    
+        
+        <!-- ------- Blog ---------->
+        
+        <section class="blog">
+            <h1>Blog</h1>
+            <p>In our blog you can find many curiosities about tutorials and much more!</p>
+            
+            <div class="row">
+                <div class=""></div>
+            </div>
+        </section>
+        
+        <section class="cta">
+        <h1></h1>
+        </section>
+        
+        <!----- Footer ----->
+        
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>I am codemaster, a person who lives in Sicily, Italy</p>
+            <div class="icons">
+                <a href="https://www.instagram.com/codemaster_lab/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/codemaster_lab" onclick=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <p>Made with <i class="fa-solid fa-heart"></i> by codemaster</p>
+            <p>2022 codemaster-lab</p>
+            <div class="dropdown">
+                <button class="dropbtn">Language</button>
+                <div class="dropdown-content">
+                    <a href="it/index.html"><img src="resources/flag_italian.png">Italian</a>
+                    <a href="en-gb/index.html"><img src="resources/flag_uk.png">English (UK)</a>
+                </div>
+            </div>
+        </section>
+        
+
+
+        <!--------JavaScript for Toggle Menu -------------------->
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+                <!-------- reCAPTCHA -------->
+        
+         <script>
+   function onSubmit(token) {
+     document.getElementById("demo-form").submit();
+   }
+ </script>
+    </body>
+</html>

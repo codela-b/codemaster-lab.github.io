@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!------ If you want white buttons in this page add in the html block the following -------->
+<!------ class in the html block : <html class="white-buttons"> -------->
+<html lang="it">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home - codemaster</title>
+        <link rel="stylesheet" href="/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/4e8c8c19ec.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="resources/logo000.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tutorials.html">Tutorial</a></li>
+                        <li><a href="about.html">Chi siamo</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contattaci</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>Sito di codemaster !!!WORK IN PROGRESS!!!</h1>
+                <p>Qui puoi trovare molti tutorial su come <br> assemblare un computer... e altro ancora!</p>
+                <a href="tutorials.html" class="hero-btn">Vai ai tutorial</a>
+            </div>
+
+        </section>
+
+        <!-------- Tutorials -------->
+
+        <section class="tutorials">
+            <h1>Tutorial</h1>
+            <p>I tutorial che offriamo</p>
+            
+            <div class="row">
+                <div class="tutorials-col">
+                    <h3>Come costruire un PC</h3>
+                    <p>Costruire un PC è più facile di quanto pensi!</p>
+                </div>
+            </div>
+            
+        </section>
+        
+    
+        
+        <!-- ------- Blog ---------->
+        
+        <section class="blog">
+            <h1>Blog</h1>
+            <p>Nel nostro blog puoi trovare molte curiosità sui nostri tutorial.... e molto altro!</p>
+            
+            <div class="row">
+                <div class=""></div>
+            </div>
+        </section>
+        
+        <section class="cta">
+        <h1></h1>
+        </section>
+        
+        <!----- Footer ----->
+        
+        <section class="footer">
+            <h4>Chi siamo</h4>
+            <p>Sono codemaster, una persona che vive in Sicilia, Italia</p>
+            <div class="icons">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <p>Fatto con <i class="fa-solid fa-heart"></i> da codemaster</p>
+            <p>2022 codemaster-lab</p>
+            <div class="dropdown">
+                <button class="dropbtn">Lingua</button>
+                <div class="dropdown-content">
+                    <a href="/about.html"><img src="resources/flag_us.png">English (US)</a>
+                    <a href="/en-gb/about.html"><img src="resources/flag_uk.png">English (UK)</a>
+                </div>
+            </div>
+        </section>
+        
+
+
+        <!--------JavaScript for Toggle Menu -------------------->
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+    </body>
+</html>

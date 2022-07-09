@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!------ If you want white buttons in this page add in the html block the following -------->
+<!------ class in the html block : <html class="white-buttons"> -------->
+<html lang="it" class="white-buttons">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contattaci - codemaster</title>
+        <link rel="stylesheet" href="/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/4e8c8c19ec.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="resources/logo-white.png"></a>
+                <div class="nav-links-white" id="navLinksWhite">
+                    <i class="fa-solid fa-xmark fa-white" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tutorials.html">Tutorial</a></li>
+                        <li><a href="about.html">Chi siamo</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contattaci</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Contact Us</h1>
+        </section>
+
+        <!-------- contact us ------------>
+        
+        <section class="location">
+        
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1628292.1371682058!2d12.665307906718526!3d37.14656244787764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13106268d05359b3%3A0x10b042967b67d50!2sSicilia!5e0!3m2!1sit!2sit!4v1653236856832!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        </section>
+        
+        
+        <section class="contact-us">
+        
+            <div class="row">
+            
+                <div class="contact-col">
+                    <div>
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <span>
+                            <h5>Sicilia, Italia</h5>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-col">
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>
+                            <h5>codemaster.lab1@gmail.com</h5>
+                            <p>Scrivici la tua domanda</p> 
+                        </span>
+                    </div>
+                    <div class="contact-col">
+                        <form action="">
+                            <input type="text" placeholder="Enter your name" required>
+                            <input type="email" placeholder="Enter your email address" required>
+                            <input type="text" placeholder="Enter your subject" required>
+                            <textarea rows="8" placeholder="Enter message" required></textarea>
+                            <button type="submit" class="hero-btn green-btn">Invia messaggio</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+
+        <!----- Footer ----->
+        
+        <section class="footer">
+            <h4>Chi siamo</h4>
+            <p>Sono codemaster, una persona che vive in Sicilia, Italia</p>
+            <div class="icons">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <p>Fatto con <i class="fa-solid fa-heart"></i> da codemaster</p>
+            <p>2022 codemaster-lab</p>
+            <div class="dropdown">
+                <button class="dropbtn">Lingua</button>
+                <div class="dropdown-content">
+                    <a href="/about.html"><img src="resources/flag_us.png">English (US)</a>
+                    <a href="/en-gb/about.html"><img src="resources/flag_uk.png">English (UK)</a>
+                </div>
+            </div>
+        </section>
+        
+
+
+        <!--------JavaScript for Toggle Menu -------------------->
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+        <script>
+
+            var navLinks = document.getElementById("navLinksWhite");
+
+            function showMenu(){
+                navLinksWhite.style.right = "0";
+            }
+            function hideMenu(){
+                navLinksWhite.style.right = "-200px";
+            }
+
+        </script>
+    </body>
+</html>
